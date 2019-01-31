@@ -7,4 +7,4 @@ Extremely over complicated Fib Calculator.  Build with Nginx, React, Express, Re
   Pratice at creating a production level workflow with AWS BeanStalk, Nginx, React, Express, Redis, Postgres,Travis CI, and     multiple docker containers/servers. 
 
 
-![diagram](desktop.png)
+![diagram](/diagrams/desktop.png)
