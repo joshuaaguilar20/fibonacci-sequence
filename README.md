@@ -8,3 +8,8 @@ Extremely over complicated Fib Calculator.  Build with Nginx, React, Express, Re
 
 
 ![diagram](/diagrams/desktop.png)
+
+## Nginx Port Fowarding Will
+routes Request from client to server. 
+
+![diagram](/diagrams/nginx.png)
