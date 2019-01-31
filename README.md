@@ -13,3 +13,8 @@ Extremely over complicated Fib Calculator.  Build with Nginx, React, Express, Re
 
 
 ![diagram](/diagrams/nginx.png)
+
+## production workflow
+![diagram](/diagrams/workflow.png)
+
+![diagram](/diagrams/setup.png)
