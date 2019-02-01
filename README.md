@@ -16,6 +16,6 @@ Extremely over complicated Fib Calculator.  Build with Nginx, React, Express, Re
 
 ## production workflow
 
-![diagram](/diagrams/workflow.png)
+
 
 ![diagram](/diagrams/setup.png)
