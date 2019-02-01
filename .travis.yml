@@ -1,0 +1,35 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t joshuaaguilar20/production -f ./client/Dockerfile.dev ./client
+
+script:
+  - docker run joshuaaguilar20/production npm test -- --coverage
+
+after_success:
+  - docker build -t joshuaaguilar20/multi-client ./client
+  - docker build -t joshuaaguilar20/multi-nginx ./nginx
+  - docker build -t joshuaaguilar20/multi-server ./server
+  - docker build -t joshuaaguilar20/multi-worker ./worker
+  # Log in to the docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  # Take those images and push them to docker hub
+  - docker push joshuaaguilar20/multi-client
+  - docker push joshuaaguilar20/multi-nginx
+  - docker push joshuaaguilar20/multi-server
+  - docker push joshuaaguilar20/multi-worker
+
+deploy:
+  provider: elasticbeanstalk
+  region: us-west-1
+  app: multi-docker
+  env: MultiDocker-env
+  bucket_name: elasticbeanstalk-us-west-1-306476627547
+  bucket_path: docker-multi
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET_KEY
