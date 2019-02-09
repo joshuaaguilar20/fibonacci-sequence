@@ -2,12 +2,20 @@
 Extremely over complicated Fib Calculator.  Build with Nginx, React, Express, Redis, Postgres, and multiple docker containers.
 
 
-# Pratice Production WorkFlow 
+# Production WorkFlow 
 
   Pratice at creating a production level workflow with AWS BeanStalk, Nginx, React, Express, Redis, Postgres,Travis CI, and     multiple docker containers/servers. 
 
 
-![diagram](/diagrams/desktop.png)
+![diagram](/diagrams/production.png)
+
+
+# Development WorkFlow 
+
+  Pratice at creating a production level workflow with AWS BeanStalk, Nginx, React, Express, Redis, Postgres,Travis CI, and     multiple docker containers/servers. 
+
+
+![diagram](/diagrams/dev.png)
 
 ## Nginx Port Fowarding 
 
@@ -19,3 +27,16 @@ Extremely over complicated Fib Calculator.  Build with Nginx, React, Express, Re
 
 
 ![diagram](/diagrams/setup.png)
+
+
+## Aws Run Container 
+
+
+
+![diagram](/diagrams/AwsRunContainer.png)
+
+## Aws RDS DataBase 
+-setup Virtual Private Cloud 
+-Elastic Cache Cluster
+![diagram](/diagrams/vpc.png)
+
