@@ -27,3 +27,10 @@ Extremely over complicated Fib Calculator.  Build with Nginx, React, Express, Re
 
 
 ![diagram](/diagrams/setup.png)
+
+
+## Aws Run Container 
+
+
+
+![diagram](/diagrams/awsRunContainer.png)
